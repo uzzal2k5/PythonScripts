@@ -1,8 +1,7 @@
 #!/usr/local/bin/python3.4
 #Packet sniffer in python
 #For Linux - Sniffs all incoming and outgoing packets :)
-#Silver Moon (m00n.silv3r@gmail.com)
- 
+
 import socket, sys
 from struct import *
  
