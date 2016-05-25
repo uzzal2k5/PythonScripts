@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3.4
 #Packet sniffer in python
 #For Linux - Sniffs all incoming and outgoing packets :)
-#Silver Moon (m00n.silv3r@gmail.com)
+
  
 import socket, sys
 from struct import *
@@ -16,7 +16,7 @@ def eth_addr (a) :
 #define ETH_P_ALL    0x0003          /* Every packet (be careful!!!) */
 try:
     s = socket.socket( socket.AF_PACKET , socket.SOCK_RAW , socket.ntohs(0x0003))
-except(socket.error , msg):
+except(socket.error, msg):
     print('Socket could not be created. Error Code : ' + str(msg[0]) + ' Message ' + msg[1])
     sys.exit()
  
