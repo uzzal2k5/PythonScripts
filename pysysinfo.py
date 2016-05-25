@@ -27,13 +27,23 @@ def memory_func():
     subprocess.call([mem, mem_arg])
 
 
+# lsblk - list block devices
+def list_block():
+    dev_list = "lsblk"
+    print(" lsblk - list block devices", dev_list)
+    subprocess.call(dev_list)
+
 # Main function that call other functions
 def main():
     # type: () -> object
     # type: () -> object
     uname_func()
+    print
     disk_func()
+    print
     memory_func()
+    print
+    list_block()
 
 
 main()
